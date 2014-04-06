@@ -1,0 +1,97 @@
+/* 
+  Localizable.strings
+  Endurance-Info
+
+  Created by Eric on 18/02/2014.
+  Copyright (c) 2014 Eric RUDZ. All rights reserved.
+*/
+
+"News" = "Actualités";
+"Categories" = "Catégories";
+"Pictures" = "Photos";
+"Calendar" = "Calendrier";
+"Live" = "Live";
+"Other" = "Autre";
+"PullTo" = "Tirez pour rafraichir";
+"AllEvents" = "http://ios.rudz.fr/iphone.php?url=http://www.endurance-info.com/fr/tous-les-evenements/";
+
+"Actu" = "Actualités";
+"Flux" = "http://www.endurance-info.com/fr/feed";
+"Live" = "Live-texte";
+"urlLive" = "http://ios.rudz.fr/iphone.php?url=http://www.endurance-info.com/fr/live/";
+"Class" = " Classements";
+"ClassILMC" = "Les classements de l'Intercontinental Le Mans Cup";
+"ClassLMS"= "Les classements des Le Mans Series";
+"ClassALMS" = "Les classements de l'American Le Mans Series";
+"Actualités Nürburgring" = "Actualités Nürburgring";
+"24 heures du Nürburgring" = "24 heures du Nürburgring";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-2.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-2.html";
+"Actualités 24h Series" = "Actualités 24h Series";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-3.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-3.html";
+"Actualités ALMS" = "Actualités ALMS";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-24.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-24.html";
+"Actualités AsianLMS" = "Actualités AsianLMS";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-35.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-35.html";
+"Actualités BES" = "Actualités BES";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-46.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-46.html";
+"Chroniques Pilotes" = "Chroniques Pilotes";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-5.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-5.html";
+"Actualités CER" = "Actualités CER";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-42.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-42.html";
+"Divers" = "Divers";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-36.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-36.html";
+"Actualités DTM" = "Actualités DTM";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-6.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-6.html";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-7.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-7.html";
+"Actualités GT1" = "Actualités GT1";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-8.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-8.html";
+"Actualités GT2" = "Actualités GT2";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-44.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-44.html";
+"Actualités GT3" = "Actualités GT3";
+"GT3 Europe" = "GT3 Europe";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-9.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-9.html";
+"Actualités FLM" = "Actualités FLM";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-10.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-10.html";
+"Actualités Grand-Am" = "Actualités Grand-Am";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-26.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-26.html";
+"Actualités GT Tour" = "Actualités GT Tour";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-47.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-47.html";
+"Actualités GT4" = "Actualités GT4";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-25.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-25.html";
+"Actualités ILMC" = "Actualités ILMC";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-45.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-45.html";
+"Le casque de..." = "Le casque de...";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-41.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-41.html";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-33.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-33.html";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-15.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-15.html";
+"Actualités LMS" = "Actualités LMS";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-13.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-13.html";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-37.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-37.html";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-14.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-14.html";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-17.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-17.html";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-34.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-34.html";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-18.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-18.html";
+"Actualités Super GT" = "Actualités Super GT";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-19.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-19.html";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-32.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-32.html";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-30.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-30.html";
+"Actualités VdeV" = "Actualités VdeV";
+"http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-61.html" = "http://ios.rudz.fr/conv_sujet.php?url=http://www.endurance-info.com/version2/actualite-discipline-61.html";
+"http://ios.rudz.fr/iphone.php?url=" = "http://ios.rudz.fr/iphone.php?url=";
+"Enregistrer l'image" = "Enregistrer l'image";
+"Annuler" = "Annuler";
+"Partager sur Facebook" = "Partager sur Facebook";
+"Partager par Mail" = "Partager par Mail";
+"Partager sur Twitter" = "Partager sur Twitter";
+"textViewPhrase" = "En cas de suggestions ou de critiques à me faire parvenir(sur l'application), vous pouvez m'envoyer un mail soit à l'adresse suivante, soit en cliquant sur le bouton en bas de cette page.";
+"titreBouton" = "Envoyer un email";
+"catWebView" = "http://ios.rudz.fr/iphone.php?url=";
+"explicationLangueTextView" = "Par défaut, les actualités sont en français. Vous pouvez cependant choisir de les suivre en anglais en changeant l'état du bouton ci-dessous(il suffit de cliquer dessus). Attention, les menus et le reste de l'application resteront en français.";
+"langueApp"="fr";
+"Autre"="Autre";
+"Parametres"="Paramètres";
+"langueActu"="Changer la langue des actualités";
+"identifiantForum"="Renseigner son identifiant(forum)";
+"Catégories"="Catégories";
+"Vous avez annuler l'écriture du tweet."="Vous avez annuler l'écriture du tweet.";
+"Tweet envoyé !"="Tweet envoyé !";

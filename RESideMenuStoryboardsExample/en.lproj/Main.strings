@@ -1,0 +1,15 @@
+
+/* Class = "IBUINavigationItem"; title = "A propos"; ObjectID = "8VR-6H-mGr"; */
+"8VR-6H-mGr.title" = "A propos";
+
+/* Class = "IBUINavigationItem"; title = "Accueil"; ObjectID = "HIf-bS-REK"; */
+"HIf-bS-REK.title" = "Accueil";
+
+/* Class = "IBUINavigationItem"; title = "Calendrier"; ObjectID = "Khv-vt-XHU"; */
+"Khv-vt-XHU.title" = "Calendrier";
+
+/* Class = "IBUIBarButtonItem"; title = "Menu"; ObjectID = "SZg-Pf-I50"; */
+"SZg-Pf-I50.title" = "Menu";
+
+/* Class = "IBUINavigationItem"; title = "Photos"; ObjectID = "yM7-df-9kv"; */
+"yM7-df-9kv.title" = "Photos";
