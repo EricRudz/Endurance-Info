@@ -9,6 +9,8 @@
 #import "MIBAboutController.h"
 #import "MIBAboutSection.h"
 #import "MIBAboutRow.h"
+#import "WebViewController.h"
+#import "CTFeedbackViewController.h"
 
 @interface MIBAboutController ()
 
@@ -53,8 +55,8 @@ static CGFloat const kHeaderFooterMargin = 15;
 	[self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"Cell"];
 	
 	//add a close button
-	UIBarButtonItem *closeButton = [[UIBarButtonItem alloc] initWithTitle:@"Close" style:UIBarButtonItemStyleDone target:self action:@selector(close)];
-	self.navigationItem.rightBarButtonItem = closeButton;
+	UIBarButtonItem *closeButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"menu.png"] style:UIBarButtonItemStyleDone target:self action:@selector(showMenu)];
+	self.navigationItem.leftBarButtonItem = closeButton;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -105,7 +107,7 @@ static CGFloat const kHeaderFooterMargin = 15;
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
 	cell.backgroundColor = [UIColor whiteColor];
-	cell.textLabel.textColor = self.view.tintColor;
+	cell.textLabel.textColor = [UIColor orangeColor];
 	cell.textLabel.backgroundColor = [UIColor whiteColor];
 	
 	MIBAboutSection *thisSection = self.sections[indexPath.section];
@@ -146,9 +148,9 @@ static CGFloat const kHeaderFooterMargin = 15;
 {
 	//create a label inside a containing view
 	UIView *containingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.tableView.bounds.size.width, [self heightForHeaderOrFooterBasedOnText:text attributes:attributes])];
-	containingView.backgroundColor = [UIColor groupTableViewBackgroundColor];
+	containingView.backgroundColor = [UIColor whiteColor];
 	UILabel *innerLabel = [[UILabel alloc] initWithFrame:CGRectInset(containingView.bounds, kHeaderFooterMargin, kHeaderFooterMargin)];
-	innerLabel.backgroundColor = [UIColor groupTableViewBackgroundColor];
+	innerLabel.backgroundColor = [UIColor whiteColor];
 	innerLabel.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
 	innerLabel.numberOfLines = 0;
 	NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:text attributes:attributes];
@@ -171,8 +173,25 @@ static CGFloat const kHeaderFooterMargin = 15;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	//by default de-select the cell since usually some modal or other app will be opened on selection rather another VC pushed
-	[tableView deselectRowAtIndexPath:indexPath animated:YES];
+    if(indexPath.section==0 && indexPath.row==0){
+        //by default de-select the cell since usually some modal or other app will be opened on selection rather another VC pushed
+        CTFeedbackViewController *feedbackViewController = [CTFeedbackViewController controllerWithTopics:CTFeedbackViewController.defaultTopics localizedTopics:CTFeedbackViewController.defaultLocalizedTopics];
+        feedbackViewController.toRecipients = @[@"endurance-info@rudz.fr"];
+        [self.navigationController pushViewController:feedbackViewController animated:YES];
+    }
+    else{
+        if(indexPath.row==0){
+            //by default de-select the cell since usually some modal or other app will be opened on selection rather another VC pushed
+            NSURL *urlApp = [NSURL URLWithString: [NSString stringWithFormat:@"%@", @"http://itunes.apple.com/fr/app/apple-store/id428312408"]];
+            [[UIApplication sharedApplication] openURL:urlApp];
+        }
+        else if(indexPath.row==1){
+            //by default de-select the cell since usually some modal or other app will be opened on selection rather another VC pushed
+            NSURL *urlApp = [NSURL URLWithString: [NSString stringWithFormat:@"%@", @"twitter:///user?screen_name=eric_rudz"]];
+            [[UIApplication sharedApplication] openURL:urlApp];
+        }
+
+    }
 }
 
 #pragma mark - delegtation
@@ -182,5 +201,11 @@ static CGFloat const kHeaderFooterMargin = 15;
 	//let delegate know that user wants to close
 	[self.delegate aboutViewClosedByController:self];
 }
+
+- (IBAction)showMenu
+{
+    [self.sideMenuViewController presentMenuViewController];
+}
+
 
 @end

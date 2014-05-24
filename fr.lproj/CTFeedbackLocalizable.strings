@@ -6,46 +6,46 @@
 
 "Question" = "Question";
 
-"Request" = "Request";
+"Request" = "Requête";
 
-"Bug Report" = "Bug Report";
+"Bug Report" = "Rapport d'erreur(s)";
 
-"Other" = "Other";
+"Other" = "Autre";
 
-"Device" = "Device";
+"Device" = "Appareil";
 
 "iOS" = "iOS";
 
-"Name" = "Name";
+"Name" = "Nom";
 
 "Version" = "Version";
 
 "Build" = "Build";
 
-"Device Info" = "Device Info";
+"Device Info" = "Informations sur le téléphone";
 
-"App Info" = "App Info";
+"App Info" = "Informations sur l'app";
 
-"Feedback" = "Feedback";
+"Feedback" = "Retour d'informations";
 
-"Topic" = "Topic";
+"Topic" = "Sujet";
 
-"Topics" = "Topics";
+"Topics" = "Sujets";
 
-"Error" = "Error";
+"Error" = "Erreur";
 
-"Mail" = "Mail";
+"Mail" = "Courriel";
 
-"Mail no configuration"="You do not have a valid e-mail account";
+"Mail no configuration"="Votre adresse mail n'est pas valide";
 
 "Dismiss"="Dismiss";
 
-"Additional Info"="Additional Info";
+"Additional Info"="Informations supplémentaires";
 
-"Additional detail"="Select the feedback attachment (picture)";
+"Additional detail"="Sélectionner une pièce jointe (photo)";
 
-"Cancel"="Cancel";
+"Cancel"="Annuler";
 
-"Camera"="Camera";
+"Camera"="Appareil photo";
 
-"PhotoLibrary"="Select from the album";
+"PhotoLibrary"="Sélectionner depuis l'album";

@@ -5,7 +5,11 @@
   Created by Eric on 18/02/2014.
   Copyright (c) 2014 Eric RUDZ. All rights reserved.
 */
-
+"If you have any comments or suggestions about the app, please use the button below." = "Si vous avez des commentaires ou des suggestions à me faire parvenir, veuillez utiliser le bouton ci-dessous.";
+"SendFeedback" = "Envoyer un retour";
+"DescriptionEnduranceInfo" = "Je ne suis pas affilié avec l'équipe d'Endurance-Info et ne prend pas part à la rédaction des articles. N'en voulez donc pas à l'équipe rédactionnelle en cas de bugs de l'application. Eric RUDZ";
+"Find my apps on the AppStore" = "Trouver mes applications";
+"Follow" = "Suivre @eric_rudz";
 "News" = "Actualités";
 "Categories" = "Catégories";
 "Pictures" = "Photos";
@@ -14,9 +18,12 @@
 "Other" = "Autre";
 "PullTo" = "Tirez pour rafraichir";
 "AllEvents" = "http://ios.rudz.fr/iphone.php?url=http://www.endurance-info.com/fr/tous-les-evenements/";
-
+"Actualisation..." = "Actualisation...";
+"dd/MM 'à' HH:mm" = "dd/MM 'à' HH:mm";
+"Dernière actualisation le" = "Dernière actualisation le";
 "Actu" = "Actualités";
 "Flux" = "http://www.endurance-info.com/fr/feed";
+"PhotoFeed" = "http://www.endurance-info.com/fr/photo/feed";
 "Live" = "Live-texte";
 "urlLive" = "http://ios.rudz.fr/iphone.php?url=http://www.endurance-info.com/fr/live/";
 "Class" = " Classements";

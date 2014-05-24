@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RESideMenu.h"
 
 @protocol MIBAboutDelegate;
 
@@ -21,6 +22,7 @@
 
 
 @protocol MIBAboutDelegate <NSObject>
+- (IBAction)showMenu;
 
 - (void)aboutViewClosedByController:(MIBAboutController *)controller;
 

@@ -6,7 +6,12 @@
   Copyright (c) 2014 Eric RUDZ. All rights reserved.
 */
 
-
+"If you have any comments or suggestions about the app, please use the button below." = "If you have any comments or suggestions about the app, please use the button below.";
+"SendFeedback" = "Send Feedback";
+"Follow @eric_rudz" = "Follow @eric_rudz";
+"DescriptionEnduranceInfo" = "I am not affiliated with the Endurance-Info team and do not take part with the redaction of the articles. Eric RUDZ";
+"Find my apps on the AppStore" = "Find my apps";
+"Follow" = "Follow @eric_rudz";
 "News" = "News";
 "Categories" = "Categories";
 "Pictures" = "Pictures";
@@ -15,10 +20,13 @@
 "Other" = "Other";
 "PullTo" = "Pull to refresh";
 "AllEvents" = "http://ios.rudz.fr/iphone.php?url=http://www.endurance-info.com/en/all-dates/";
-
+"Actualisation..." = "Refresh";
+"dd/MM 'à' HH:mm" = "dd/MM 'at' HH:mm";
+"Dernière actualisation le" = "Last refresh the";
 "Actu" = "News";
 "Flux" = "http://www.endurance-info.com/en/feed";
 "Live" = "Live text";
+"PhotoFeed" = "http://www.endurance-info.com/en/photo/feed";
 "urlLive" = "http://ios.rudz.fr/iphone.php?url=http://www.endurance-info.com/en/live/";
 "Class" = " Standings";
 "ClassILMC" = "Intercontinental Le Mans Cup standings";

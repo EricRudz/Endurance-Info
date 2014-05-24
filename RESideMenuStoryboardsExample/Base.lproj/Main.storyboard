@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
+        <deployment defaultVersion="1792" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--Root View Controller-->
@@ -22,6 +23,7 @@
         <scene sceneID="jO9-85-nrD">
             <objects>
                 <navigationController restorationIdentifier="contentController" storyboardIdentifier="contentController" definesPresentationContext="YES" id="EPR-YW-obD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aNs-Xi-BzL"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bHH-Lh-tAZ">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -42,7 +44,7 @@
             </objects>
             <point key="canvasLocation" x="923" y="298"/>
         </scene>
-        <!--First View Controller - Accueil-->
+        <!--First View Controller - Home-->
         <scene sceneID="4d1-Jz-tGk">
             <objects>
                 <viewController storyboardIdentifier="firstController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jsP-Dz-DYG" customClass="DEMOFirstViewController" sceneMemberID="viewController">
@@ -50,7 +52,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Accueil" id="HIf-bS-REK">
+                    <navigationItem key="navigationItem" title="Home" id="HIf-bS-REK">
                         <barButtonItem key="leftBarButtonItem" title="Menu" id="SZg-Pf-I50">
                             <connections>
                                 <action selector="showMenu" destination="jsP-Dz-DYG" id="Fp7-R0-lXj"/>
@@ -71,7 +73,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="KaW-1d-jq1">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Reuse" id="KaW-1d-jq1">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KaW-1d-jq1" id="7tp-fZ-cjL">
@@ -113,15 +115,30 @@
             </objects>
             <point key="canvasLocation" x="461" y="997"/>
         </scene>
-        <!--Second View Controller - A propos-->
+        <!--Second View Controller - About-->
         <scene sceneID="ajy-0O-wjT">
             <objects>
                 <viewController restorationIdentifier="secondController" storyboardIdentifier="secondController" id="yGP-ij-jME" customClass="DEMOSecondViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="zr4-Ue-MTR">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="jiB-kZ-51l">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="A propos" id="8VR-6H-mGr">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="reuse" id="2jT-Aq-AOM">
+                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2jT-Aq-AOM" id="ujT-PM-l2z">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="yGP-ij-jME" id="W1R-2L-wXg"/>
+                            <outlet property="delegate" destination="yGP-ij-jME" id="1BX-Do-mst"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="About" id="8VR-6H-mGr">
                         <barButtonItem key="leftBarButtonItem" image="Menu" id="3gh-ed-0Ek">
                             <connections>
                                 <action selector="showMenu" destination="yGP-ij-jME" id="ZoY-gJ-XvS"/>
@@ -133,7 +150,7 @@
             </objects>
             <point key="canvasLocation" x="1958" y="1123"/>
         </scene>
-        <!--Photo View Controller - Photos-->
+        <!--Photo View Controller - Pictures-->
         <scene sceneID="3hl-cS-Jgl">
             <objects>
                 <tableViewController storyboardIdentifier="photoVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="iPb-8O-frD" customClass="PhotoViewController" sceneMemberID="viewController">
@@ -142,16 +159,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="THX-Sw-Mvi">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Reuse" id="THX-Sw-Mvi">
                                 <rect key="frame" x="0.0" y="86" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="THX-Sw-Mvi" id="dcl-Jc-l4j">
                                     <rect key="frame" x="0.0" y="0.0" width="253" height="43"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="O7I-Cm-tQX" kind="push" trigger="accessoryAction" id="e1L-g5-nMf"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -159,7 +173,7 @@
                             <outlet property="delegate" destination="iPb-8O-frD" id="gje-KZ-A63"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Photos" id="yM7-df-9kv">
+                    <navigationItem key="navigationItem" title="Pictures" id="yM7-df-9kv">
                         <barButtonItem key="leftBarButtonItem" image="Menu" id="PmY-nU-rDz">
                             <connections>
                                 <action selector="showMenu" destination="iPb-8O-frD" id="MhE-Uu-eZC"/>
@@ -171,45 +185,10 @@
             </objects>
             <point key="canvasLocation" x="2082" y="2164"/>
         </scene>
-        <!--Collection View Controller-->
-        <scene sceneID="fdV-uT-Fw2">
-            <objects>
-                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="O7I-Cm-tQX" sceneMemberID="viewController">
-                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="OD0-YA-06T">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QD0-YX-8xv">
-                            <size key="itemSize" width="50" height="50"/>
-                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                        </collectionViewFlowLayout>
-                        <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="W1I-qL-sIo">
-                                <rect key="frame" x="0.0" y="64" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                </view>
-                            </collectionViewCell>
-                        </cells>
-                        <connections>
-                            <outlet property="dataSource" destination="O7I-Cm-tQX" id="IXk-sT-rSI"/>
-                            <outlet property="delegate" destination="O7I-Cm-tQX" id="Uef-n1-9TL"/>
-                        </connections>
-                    </collectionView>
-                    <navigationItem key="navigationItem" id="DfW-uT-IRp"/>
-                </collectionViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Qyr-Jw-wuc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2602" y="2170"/>
-        </scene>
         <!--Navigation Controller-->
         <scene sceneID="HJS-Jr-YMN">
             <objects>
-                <navigationController id="5Ka-ZR-Qpk" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NavGen" id="5Ka-ZR-Qpk" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="gQb-3a-1cn"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="f9W-9G-tC2">
@@ -234,12 +213,12 @@
             <objects>
                 <tableViewController storyboardIdentifier="NewsVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="adw-pS-9UT" customClass="NewsViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="BM0-X3-9Zt">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Cxm-rt-gRU">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Reuse" id="Cxm-rt-gRU">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cxm-rt-gRU" id="6vP-fj-4Jx">
                                     <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
@@ -302,10 +281,10 @@
             </objects>
             <point key="canvasLocation" x="2540" y="607"/>
         </scene>
-        <!--Calendrier View Controller2-->
+        <!--Calendrier View Controller-->
         <scene sceneID="Xgd-dQ-15A">
             <objects>
-                <viewController restorationIdentifier="calendrierVC2" storyboardIdentifier="calendrierVC2" id="BEL-76-zjO" customClass="CalendrierViewController2" sceneMemberID="viewController">
+                <viewController restorationIdentifier="calendrierVC" storyboardIdentifier="calendrierVC" id="BEL-76-zjO" customClass="CalendrierViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ccj-OG-ipg">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -333,41 +312,6 @@
             </objects>
             <point key="canvasLocation" x="3306" y="232"/>
         </scene>
-        <!--Calendrier View Controller - Calendrier-->
-        <scene sceneID="rC6-3U-JeB">
-            <objects>
-                <tableViewController restorationIdentifier="calendrierVC" storyboardIdentifier="calendrierVC" id="wak-sx-jpX" customClass="CalendrierViewController" sceneMemberID="viewController">
-                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="cvD-v1-Gzw">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="Kh7-vA-259">
-                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Kh7-vA-259" id="T1A-Nu-1ke">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="wak-sx-jpX" id="bfK-wb-NEs"/>
-                            <outlet property="delegate" destination="wak-sx-jpX" id="nYt-Zz-e3N"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Calendrier" id="Khv-vt-XHU">
-                        <barButtonItem key="leftBarButtonItem" image="Menu" id="DVB-Mt-2Iu">
-                            <connections>
-                                <action selector="showMenu" destination="wak-sx-jpX" id="IZi-Mt-ajU"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KAc-UL-QYL" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2869" y="-328"/>
-        </scene>
     </scenes>
     <resources>
         <image name="Menu" width="28" height="20"/>
@@ -380,6 +324,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="Krq-Cs-saJ"/>
+        <segue reference="IRk-kT-2oF"/>
     </inferredMetricsTieBreakers>
 </document>
